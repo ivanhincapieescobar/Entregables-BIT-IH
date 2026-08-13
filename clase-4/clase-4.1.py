@@ -26,3 +26,10 @@ for numero in range(100):  # Ejemplo iterando sobre un rango de numeros del 0 al
 
 print("------------------------------------------")
 print(f"La sumatoria total es: {suma_total}")
+
+#Bucles While (Iteración basada en una condición booleana)  
+#El bucle while evalua una condición y ejecuta el bloque de código interno solamente si la condicion es verdadera. Se detendrá cuando la condición cambie a Falso
+contador = 0
+while contador <= 10:
+  print(f"El valor del contador es: {contador}")
+  contador += 1

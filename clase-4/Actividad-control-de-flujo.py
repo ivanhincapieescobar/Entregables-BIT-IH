@@ -36,20 +36,20 @@ nombres = ["Juan", "Pedro", "Jorge", "María","Ana"]
 #   Si el nombre empieza con "J", omite ese nombre con continue.
 #   En cualquier otro caso, imprime el nombre.¨
 
-i = 0
+index = 0
 
-while i < len(nombres):
-    nombre = nombres[i]
+while index < len(nombres):
+    nombre = nombres[index]
 
     if nombre == "Ana":
         print("¡Ana está en la lista!")
         break
 
     elif nombre.startswith("J"):
-        i += 1
+        index += 1
         continue
 
     else:
         print(nombre)
 
-    i += 1
+    index += 1
