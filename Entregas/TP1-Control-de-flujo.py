@@ -81,3 +81,14 @@ ciudades = {
 
 for nombre, ciudad in ciudades.items():
     print(f"{nombre} vive en {ciudad}")
+
+
+#7. Cantidad de estudiantes por ciudad: a partir del diccionario anterior, contruye un nuevo diccionario que 
+# indique cuantos estudiantes viven en cada ciudad.
+
+ciudades = {
+    "Bogota": 3,
+    "Medellin": 2,
+    "Cartagena": 5,
+    "Pasto: "3"
+} 
