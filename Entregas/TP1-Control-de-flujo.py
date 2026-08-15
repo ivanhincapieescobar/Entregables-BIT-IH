@@ -90,5 +90,56 @@ ciudades = {
     "Bogota": 3,
     "Medellin": 2,
     "Cartagena": 5,
-    "Pasto: "3"
+    "Pasto": 3,
 } 
+
+
+#8.Ciclo While
+#Construye un programa que permita ingresar números utilizando un ciclo while.
+#El programa debe finalizar únicamente cuando el usuario ingrese el número 0.
+#Al finalizar muestra:
+#   • Cantidad de números ingresados (sin contar el 0). 
+#   • Suma total. 
+#   • Promedio de los números ingresados. 
+
+
+contador = 0
+suma = 0
+
+numero = int(input("Ingrese un número (0 para finalizar): "))
+
+while numero != 0:
+    contador += 1
+    suma += numero
+
+    numero = int(input("Ingrese un número (0 para finalizar): "))
+
+if contador > 0:
+    promedio = suma / contador
+
+    print(f"\nCantidad de números ingresados: {contador}")
+    print(f"Suma total: {suma}")
+    print(f"Promedio: {promedio}")
+else:
+    print("\nNo se ingresaron números diferentes de 0.")
+
+
+#9. Uso de break y continue
+#Recorre los números del 1 al 30.
+#    • Si el número es múltiplo de 3, utiliza continue. 
+#    • Si el número es igual a 25, utiliza break. 
+# Imprime únicamente los números que fueron procesados por el ciclo
+
+
+numero = 1
+
+while numero <= 30:
+    if numero == 25:
+        break
+
+    if numero % 3 == 0:
+        numero += 1
+        continue
+
+    print(numero)
+    numero += 1
